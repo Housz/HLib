@@ -8,6 +8,8 @@
 #include "vector.h"
 
 //向量空间不足时扩容
+//扩容后向量容量为原容量两倍
+//单次扩容时间复杂度为O(n)，分摊意义下复杂度为O(1)
 template<class T>
 void Vector<T>::expand()
 {
