@@ -89,11 +89,10 @@ public:
 
     void sort(Rank lo, Rank hi);
 
-    void unsort(Rank lo, Rank hi);
+    void unsort(Rank lo, Rank hi);//置乱
+    void unsort();//整体置乱
 
-    void unsort();
-
-    int deduplicate();
+    int deduplicate();//删除无序向量中重复元素
 
     int uniquify();
 

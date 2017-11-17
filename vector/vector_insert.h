@@ -7,6 +7,8 @@
 
 #include "vector.h"
 
+//插入元素e到位置r
+//平均时间复杂度O(n)
 template<class T>
 Rank Vector<T>::insert(Rank r, T const &e)
 {
@@ -21,4 +23,10 @@ Rank Vector<T>::insert(Rank r, T const &e)
     return r;//返回秩
 }
 
+//插入元素e到向量尾
+template<class T>
+Rank Vector<T>::insert(T const &e)
+{
+    return insert(_size, e);
+}
 #endif //HLIB_VECTOR_INSERT_H
