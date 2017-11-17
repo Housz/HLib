@@ -9,6 +9,7 @@
 
 //装填因子（_size/_capacity）过小时（设为25%）压缩向量所占空间（容量减半）
 //单次扩容时间复杂度为O(n)，分摊意义下复杂度为O(1)
+
 template<class T>
 void Vector<T>::shrink()
 {
