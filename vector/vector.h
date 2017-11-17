@@ -1,5 +1,5 @@
 //
-// Created by 12151 on 2017/11/16.
+// Created by Housz on 2017/11/16.
 //
 #pragma once
 #ifndef HLIB_VECTOR_H
@@ -17,9 +17,8 @@ protected:
     T *_elem;   //数据区
 
     void copyFrom(T const *A, Rank lo, Rank hi);    //复制数组区间A[lo, hi)
-    void expand();
-
-    void shrink();
+    void expand();//向量空间不足时扩容
+    void shrink();//向量实际规模远小于向量容量（下溢underflow）缩容
 
     bool bubble(Rank lo, Rank hi);
 

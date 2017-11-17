@@ -1,11 +1,12 @@
 //
-// Created by 12151 on 2017/11/16.
+// Created by Housz on 2017/11/16.
 //
 
 #pragma once
 #ifndef HLIB_VECTOR_CONSTRUCTOR_BY_COPYING_H
 #define HLIB_VECTOR_CONSTRUCTOR_BY_COPYING_H
 
+#include "vector.h"
 template<class T>
 void Vector<T>::copyFrom(T const *A, Rank lo, Rank hi)
 {

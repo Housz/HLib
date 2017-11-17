@@ -3,5 +3,5 @@ project(HLib)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp vector/vector.h vector/vector_implementation.h vector/vector_constructor_by_copying.h vector/vector_insert.h vector/vector_disordered.h vector/vector_expand.h)
+set(SOURCE_FILES main.cpp vector/vector.h vector/vector_implementation.h vector/vector_constructor_by_copying.h vector/vector_insert.h vector/vector_disordered.h vector/vector_expand.h vector/vector_shrink.h vector/vector_find.h)
 add_executable(HLib ${SOURCE_FILES})
