@@ -97,10 +97,10 @@ public:
     int uniquify();
 
 //traverse
-    void traverse(void(*)(T &));
+    void traverse(void(*)(T &));//函数指针机制实现遍历
 
     template<class VST>
-    void traverse(VST &);
+    void traverse(VST &);//函数对象机制实现遍历
 
 };
 
