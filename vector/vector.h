@@ -77,7 +77,7 @@ public:
 //writable interfaces
     T operator[](Rank r) const;
 
-    Vector<T> operator=(Vector<T> const &);
+    Vector<T>& operator=(Vector<T> const &);
 
     T remove(Rank r);
 
