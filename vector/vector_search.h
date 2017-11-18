@@ -12,7 +12,7 @@
 template<class T>
 Rank Vector<T>::search(T const &e, Rank lo, Rank hi) const
 {
-
+    return binSearch(_elem, e, lo, hi);
 }
 
 

@@ -9,7 +9,7 @@
 
 //重载下标运算符
 template<class T>
-T &Vector<T>::operator[](Rank r) const
+T& Vector<T>::operator[](Rank r) const
 {
     return _elem[r];
 }
