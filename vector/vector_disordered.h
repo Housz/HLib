@@ -1,7 +1,7 @@
 //
 // Created by Housz on 2017/11/16.
 //
-
+#pragma once
 #ifndef HLIB_VECTOR_DISORDERED_H
 #define HLIB_VECTOR_DISORDERED_H
 

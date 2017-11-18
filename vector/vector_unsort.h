@@ -10,7 +10,7 @@
 
 //swap函数
 template<class T>
-void swap(T &a, T &b)
+static void swap(T &a, T &b)
 {
     T c(a);
     a = b;

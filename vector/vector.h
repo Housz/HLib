@@ -68,11 +68,11 @@ public:
 
     Rank find(T const &e) const { return find(e, 0, _size); }
 
-    Rank find(T const &e, Rank lo, Rank hi) const;
+    Rank find(T const &e, Rank lo, Rank hi) const;//无序向量区间查找
 
     Rank search(T const &e) const { return (0 >= _size) ? -1 : search(e, 0, _size); }
 
-    Rank search(T const &e, Rank lo, Rank hi);
+    Rank search(T const &e, Rank lo, Rank hi) const;//有序向量区间查找
 
 //writable interfaces
     T operator[](Rank r) const;
@@ -92,9 +92,9 @@ public:
     void unsort(Rank lo, Rank hi);//置乱
     void unsort();//整体置乱
 
-    int deduplicate();//删除无序向量中重复元素
+    int deduplicate();//有序向量去重
 
-    int uniquify();
+    int uniquify();//无序向量去重
 
 //traverse
     void traverse(void(*)(T &));//函数指针机制实现遍历

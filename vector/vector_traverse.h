@@ -3,6 +3,7 @@
 // Created by Housz on 2017/11/17.
 //
 
+#pragma once
 #ifndef HLIB_VECTOR_TRAVERSE_H
 #define HLIB_VECTOR_TRAVERSE_H
 
