@@ -7,7 +7,7 @@
 #ifndef HLIB_VECTOR_TRAVERSE_H
 #define HLIB_VECTOR_TRAVERSE_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //函数指针机制
 template<class T>

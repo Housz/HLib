@@ -14,7 +14,7 @@
 #include "vector_insert.h"
 #include "vector_override_operator.h"
 #include "vector_remove.h"
-#include "search.h"
+#include "vector_search.h"
 #include "vector_shrink.h"
 #include "vector_sort.h"
 #include "vector_traverse.h"

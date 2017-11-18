@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_UNSORT_H
 #define HLIB_VECTOR_UNSORT_H
 
-#include "vector.h"
+//#include "vector.h"
 #include "stdlib.h"//rand()
 
 //swap函数

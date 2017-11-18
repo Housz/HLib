@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_INSERT_H
 #define HLIB_VECTOR_INSERT_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //插入元素e到位置r
 //平均时间复杂度O(n)

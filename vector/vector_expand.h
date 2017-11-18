@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_EXPAND_H
 #define HLIB_VECTOR_EXPAND_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //向量空间不足时扩容
 //扩容后向量容量为原容量两倍

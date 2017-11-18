@@ -6,7 +6,7 @@
 #ifndef HLIB_VECTOR_DEDUPLICATE_H
 #define HLIB_VECTOR_DEDUPLICATE_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //删除无序向量中重复元素
 //复杂度O(n2)

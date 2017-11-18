@@ -70,7 +70,7 @@ public:
 
     Rank find(T const &e, Rank lo, Rank hi) const;//无序向量区间查找
 
-    Rank search(T const &e) const { return (0 >= _size) ? -1 : search(e, 0, _size); }
+    Rank search(T const &e) const;
 
     Rank search(T const &e, Rank lo, Rank hi) const;//有序向量区间查找
 

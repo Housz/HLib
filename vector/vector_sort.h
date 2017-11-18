@@ -6,7 +6,7 @@
 #ifndef HLIB_VECTOR_SORT_H
 #define HLIB_VECTOR_SORT_H
 
-#include "vector.h"
+//#include "vector.h"
 
 template <class T>
 void Vector<T>::sort(Rank lo, Rank hi)

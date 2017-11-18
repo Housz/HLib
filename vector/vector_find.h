@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_FIND_H
 #define HLIB_VECTOR_FIND_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //无序向量顺序查找
 //返回最后一个元素e的位置，查找失败则返回lo-1

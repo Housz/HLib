@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_REMOVE_H
 #define HLIB_VECTOR_REMOVE_H
 
-#include "vector.h"
+//#include "vector.h"
 //将删除单元素看作删除区间的特例，基于后者实现前者
 //可将移动操作总次数控制在O(m)内，而与待删除区间长度无关（m = _size - hi）
 

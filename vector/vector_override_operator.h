@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_OVERRIDE_OPERATOR_H
 #define HLIB_VECTOR_OVERRIDE_OPERATOR_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //重载下标运算符
 template<class T>

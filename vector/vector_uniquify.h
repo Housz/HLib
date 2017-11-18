@@ -5,7 +5,7 @@
 #ifndef HLIB_VECTOR_UNIQUIFY_H
 #define HLIB_VECTOR_UNIQUIFY_H
 
-#include "vector.h"
+//#include "vector.h"
 
 //有序向量去重
 //复杂度O(n)
