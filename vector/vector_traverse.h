@@ -31,7 +31,7 @@ void Vector<T>::traverse(VST &visit)
 
 
 
-/*举例:输出每个元素
+/*举例:输出每个元素（函数对象机制）
 struct Increase
 {
     template <class T>
