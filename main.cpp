@@ -29,10 +29,10 @@ struct Increase
 
 int main()
 {
-    Vector<double> v;
-    v.insert(1.1);
-    v.insert(2.2);
-    v.insert(3.3);
+    Vector<int> v;
+    v.insert(1);
+    v.insert(2);
+    v.insert(3);
 
 
 //    v.traverse(visit<int>());
@@ -43,8 +43,10 @@ int main()
 //    std::cout << v[0] << std::endl;
 //    std::cout << v[1] << std::endl;
 //    std::cout << v[2] << std::endl;
+//
 
-    Increase in;
-    v.traverse(in);
+    std::cout << v.search(2);
+//    Increase in;
+//    v.traverse(in);
     return 0;
 }
