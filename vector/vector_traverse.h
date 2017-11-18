@@ -31,21 +31,28 @@ void Vector<T>::traverse(VST &visit)
 
 
 
-/*举例:每个元素+1
-template <class T>
+/*举例:输出每个元素
 struct Increase
 {
-    virtual bool operator() (T& e)
+    template <class T>
+    bool operator() (T& e)
     {
-        e++;
+        std::cout << e << std::endl;
     }
 };
 
-template <class T>
-void increase(Vector<T>& V)
+int main()
 {
-    V.traverse(Increase<T>());
+    Vector<double> v;
+    v.insert(1.1);
+    v.insert(2.2);
+    v.insert(3.3);
+
+    Increase in;
+    v.traverse(in);
+    return 0;
 }
+
 
  * */
 #endif //HLIB_VECTOR_TRAVERSE_H
