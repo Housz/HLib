@@ -6,6 +6,7 @@
 #define HLIB_VECTOR_IMPLEMENTATION_H
 
 #include "compare.h"
+#include "swap.h"
 #include "vector_constructor_by_copying.h"
 #include "vector_deduplicate.h"
 #include "vector_disordered.h"
@@ -20,4 +21,6 @@
 #include "vector_traverse.h"
 #include "vector_uniquify.h"
 #include "vector_unsort.h"
+#include "vector_bubble.h"
+#include "vector_bubblesort.h"
 #endif //HLIB_VECTOR_IMPLEMENTATION_H

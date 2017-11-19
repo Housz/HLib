@@ -8,14 +8,6 @@
 //#include "vector.h"
 #include "stdlib.h"//rand()
 
-//swap函数
-template<class T>
-static void swap(T &a, T &b)
-{
-    T c(a);
-    a = b;
-    b = c;
-}
 
 //区间置乱
 template <class T>
