@@ -23,4 +23,6 @@
 #include "vector_unsort.h"
 #include "vector_bubble.h"
 #include "vector_bubblesort.h"
+#include "vector_merge.h"
+#include "vector_mergesort.h"
 #endif //HLIB_VECTOR_IMPLEMENTATION_H

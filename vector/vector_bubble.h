@@ -11,7 +11,7 @@ template <class T>
 bool Vector<T>::bubble(Rank lo, Rank hi)
 {
     bool sorted = true;//整体有序标志
-    while( ++lo < hi)//自前向后逐个扫描
+    while( ++lo <= hi)//自前向后逐个扫描
     {
         if (_elem[lo-1] > _elem[lo])
         {

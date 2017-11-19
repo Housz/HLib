@@ -26,16 +26,16 @@ protected:
 
     Rank max(Rank lo, Rank hi);
 
-    void selectionSort(Rank lo, Rank hi);
+//    void selectionSort(Rank lo, Rank hi);
 
     void merge(Rank lo, Rank mi, Rank hi);
 
     void mergeSort(Rank lo, Rank hi);
 
-    Rank partition(Rank lo, Rank hi);   //轴点构造算法
-    void quickSort(Rank lo, Rank hi);
+//    Rank partition(Rank lo, Rank hi);   //轴点构造算法
+//    void quickSort(Rank lo, Rank hi);
 
-    void heapSort(Rank lo, Rank hi);
+//    void heapSort(Rank lo, Rank hi);
 
 public:
 //构造函数
@@ -87,6 +87,7 @@ public:
 
     Rank insert(T const &e);
 
+    void sort();
     void sort(Rank lo, Rank hi);
 
     void unsort(Rank lo, Rank hi);//置乱

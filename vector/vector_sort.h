@@ -8,9 +8,17 @@
 
 //#include "vector.h"
 
-template <class T>
+template<class T>
 void Vector<T>::sort(Rank lo, Rank hi)
 {
-
+//    mergeSort(lo, hi);
+    bubbleSort(lo, hi);
 }
+
+template<class T>
+void Vector<T>::sort()
+{
+    sort(0, _size - 1);
+}
+
 #endif //HLIB_VECTOR_SORT_H

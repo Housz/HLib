@@ -1,52 +1,56 @@
 #include "iostream"
 #include "vector/vector.h"
+#include "cstdlib"
+#include "cstdio"
+#include "ctime"
 
-
-
-//
-//typedef void (*fun)(int a);
-//
-//void fuck(int a)
-//{
-//    std::cout << a << std::endl;
-//}
-
+using std::cout;
+using std::cin;
+using std::endl;
 
 struct Increase
 {
-    template <class T>
-    bool operator() (T& e)
+    template<class T>
+    bool operator()(T &e)
     {
         std::cout << e << std::endl;
     }
 };
 
-//template <class T>
-//void increase(Vector<T>& V)
-//{
-//    V.traverse(Increase<T>());
-//}
-
 int main()
 {
     Vector<int> v;
-    v.insert(1);
-    v.insert(2);
-    v.insert(3);
+
+    srand((unsigned) time(NULL));
+
+    for (int i = 0; i < 10000; ++i)
+    {
+        int t = rand() % 100 + 1;
+//        cout << t << "(" << i << ")"<<" ";
+//        for (int j = 0; j < t; ++j)
+//        {
+//            cout << "|";
+//        }
+//        cout << " " << t << endl;
+        v.insert(t);
+    }
 
 
-//    v.traverse(visit<int>());
-//    fun f = fuck;
-//    v.traverse(f);
-//    std::cout << v.search(2);
-//    v.unsort();
-//    std::cout << v[0] << std::endl;
-//    std::cout << v[1] << std::endl;
-//    std::cout << v[2] << std::endl;
+    cout << endl << "*********************" << endl ;
+
+//    cout << v.size();
 //
+    v.sort();
 
-    std::cout << v.search(2);
-//    Increase in;
-//    v.traverse(in);
+    for (int i = 0; i < 10000; ++i)
+    {
+        //cout << v[i] <<  "(" << i << ")"<<" ";
+        for (int j = 0; j < v[i]; ++j)
+        {
+            cout << "|";
+        }
+        cout << " " << v[i] << endl;
+    }
+    system("pause");
     return 0;
 }
