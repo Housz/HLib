@@ -20,11 +20,17 @@ struct ListNode
 //构造函数
     ListNode() {}
 
-    ListNode(T e, ListNodePosi(T) p = NULL, ListNodePosi(T) s = NULL) : data(e), pred(p), succ(s) {}
+    ListNode(T e, ListNodePosi(T)p = NULL, ListNodePosi(T)s = NULL) : data(e), pred(p), succ(s) {}
 
+//析构函数
+    ~ListNode()
+    {
+        pred = NULL;
+        succ = NULL;
+    }
 //操作接口
-    ListNodePosi(T) insertAsPred(T const& e);//紧靠当前节点之前插入新节点
-    ListNodePosi(T) insertAsSucc(T const& e);//紧靠当前节点之后插入新节点
+    ListNodePosi(T)insertAsPred(T const &e);//紧靠当前节点之前插入新节点
+    ListNodePosi(T)insertAsSucc(T const &e);//紧靠当前节点之后插入新节点
 };
 
 #include "listnode_implementation.h"

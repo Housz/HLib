@@ -12,10 +12,10 @@ void List<T>::init()
     trailer = new ListNode<T>;
 
     header->succ = trailer;
-    header->pred = nullptr;
+    header->pred = NULL;
 
     trailer->pred = header;
-    trailer->succ = nullptr;
+    trailer->succ = NULL;
 
     _size = 0;
 }
