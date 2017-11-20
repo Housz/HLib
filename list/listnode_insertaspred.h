@@ -1,0 +1,8 @@
+//
+// Created by Housz on 2017/11/20.
+//
+#pragma once
+#ifndef HLIB_LISTNODE_INSERTASPRED_H
+#define HLIB_LISTNODE_INSERTASPRED_H
+
+#endif //HLIB_LISTNODE_INSERTASPRED_H

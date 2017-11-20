@@ -23,9 +23,9 @@ int main()
 
     srand((unsigned) time(NULL));
 
-    for (int i = 0; i < 10000; ++i)
+    for (int i = 0; i < 100000; ++i)
     {
-        int t = rand() % 100 + 1;
+        int t = rand() % 10000 + 1;
 //        cout << t << "(" << i << ")"<<" ";
 //        for (int j = 0; j < t; ++j)
 //        {
@@ -34,23 +34,25 @@ int main()
 //        cout << " " << t << endl;
         v.insert(t);
     }
-
-
-    cout << endl << "*********************" << endl ;
+    clock_t start = clock();
+    v.sort();
+    clock_t ends = clock();
+    cout <<"Running Time : "<<(double)(ends - start)/ CLOCKS_PER_SEC << endl;
+//    cout << endl << "*********************" << endl ;
 
 //    cout << v.size();
 //
-    v.sort();
 
-    for (int i = 0; i < 10000; ++i)
-    {
-        //cout << v[i] <<  "(" << i << ")"<<" ";
-        for (int j = 0; j < v[i]; ++j)
-        {
-            cout << "|";
-        }
-        cout << " " << v[i] << endl;
-    }
+//
+//    for (int i = 0; i < 1000; ++i)
+//    {
+//        //cout << v[i] <<  "(" << i << ")"<<" ";
+//        for (int j = 0; j < v[i]; ++j)
+//        {
+//            cout << "|";
+//        }
+//        cout << " " << v[i] << endl;
+//    }
     system("pause");
     return 0;
 }
