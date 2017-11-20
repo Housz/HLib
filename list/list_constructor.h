@@ -5,7 +5,6 @@
 #ifndef HLIB_LIST_CONSTRUCTOR_H
 #define HLIB_LIST_CONSTRUCTOR_H
 
-#include "list.h"
 
 //默认构造
 template <class T>

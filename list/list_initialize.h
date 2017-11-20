@@ -5,8 +5,6 @@
 #ifndef HLIB_LIST_INITIALIZE_H
 #define HLIB_LIST_INITIALIZE_H
 
-#include "list.h"
-
 template <class T>
 void List<T>::init()
 {

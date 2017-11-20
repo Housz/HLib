@@ -53,6 +53,13 @@ public:
     ListNodePosi(T) find (T const& e, int n, ListNodePosi(T) p) const;
 
 //可写接口
+    ListNodePosi(T) insertAsFirst(T const& e);//将e当作首节点插入
+    ListNodePosi(T) insertAsLast(T const& e);//将e当作末节点插入
+    ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);//将e当作p后继插入
+    ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);//将e当作p前驱插入
+
+    T remove (ListNodePosi(T) p);//删除合法位置p处节点，返回别删除数据
+
 };
 
 #include "list_implementation.h"

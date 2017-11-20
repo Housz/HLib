@@ -5,7 +5,6 @@
 #ifndef HLIB_LIST_OVERRIDE_OPERATOR_H
 #define HLIB_LIST_OVERRIDE_OPERATOR_H
 
-#include "list.h"
 //重载操作符 [] ，可通过秩访问节点
 //效率低
 template <class T>
