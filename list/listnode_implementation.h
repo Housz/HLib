@@ -7,5 +7,4 @@
 
 #include "listnode_insertaspred.h"
 #include "listnode_insertassucc.h"
-
 #endif //HLIB_LISTNODE_IMPLEMENTATION_H

@@ -46,7 +46,14 @@ public:
     bool empty() const { return _size <= 0; }//判空
     T& operator[] (Rank r) const;//重载下标运算符，效率低
 
+    ListNodePosi(T) first() const { return header->succ; }
+    ListNodePosi(T) last() const { return trailer->pred; }
+
+    ListNodePosi(T) find(T const& e) const;
+    ListNodePosi(T) find (T const& e, int n, ListNodePosi(T) p) const;
+
 //可写接口
 };
 
+#include "list_implementation.h"
 #endif //HLIB_LIST_H

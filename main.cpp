@@ -16,7 +16,7 @@ struct Increase
         std::cout << e << std::endl;
     }
 };
-
+/*
 int main()
 {
     Vector<int> v;
@@ -55,4 +55,4 @@ int main()
 //    }
     system("pause");
     return 0;
-}
+}*/
