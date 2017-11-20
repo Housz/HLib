@@ -87,6 +87,8 @@ public:
 
     Rank insert(T const &e);
 
+    Rank push_back(T const &e){ return insert(e); }
+
     void sort();
     void sort(Rank lo, Rank hi);
 
