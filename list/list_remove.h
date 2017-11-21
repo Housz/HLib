@@ -9,13 +9,13 @@
 template <class T>
 T List<T>::remove(ListNode<T> *p)
 {
-    T e = p->data;
+    T e = p->data;//备份被删除节点数据
 
     p->pred->succ = p->succ;
     p->succ->pred = p->pred;
 
     delete p;
 
-    return e;
+    return e;//返回被删除节点数据
 }
 #endif //HLIB_LIST_REMOVE_H

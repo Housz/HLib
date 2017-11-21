@@ -8,6 +8,7 @@
 #include "list_initialize.h"
 #include "list_constructor.h"
 #include "list_constructor_by_copying.h"
+#include "list_destructor.h"
 #include "list_copynodes.h"
 #include "list_override_operator.h"
 #include "list_find.h"

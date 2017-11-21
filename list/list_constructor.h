@@ -13,6 +13,4 @@ List<T>::List()
     init();
 }
 
-//整体复制列表L
-
 #endif //HLIB_LIST_CONSTRUCTOR_H
