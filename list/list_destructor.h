@@ -10,6 +10,8 @@ template <class T>
 List<T>::~List()
 {
     clear();
+
+    //析构首尾哨兵
     delete header;
     delete trailer;
 }
