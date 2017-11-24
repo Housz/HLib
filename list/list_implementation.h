@@ -15,4 +15,5 @@
 #include "list_clear.h"
 #include "list_insert.h"
 #include "list_remove.h"
+#include "list_deduplicate.h"
 #endif //HLIB_LIST_IMPLEMENTATION_H

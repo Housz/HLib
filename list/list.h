@@ -58,6 +58,7 @@ public:
     ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);//将e当作p后继插入
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);//将e当作p前驱插入
 
+    int deduplicate();//无序去重
     T remove (ListNodePosi(T) p);//删除合法位置p处节点，返回别删除数据
 
 };
