@@ -61,6 +61,12 @@ public:
     int deduplicate();//无序去重
     T remove (ListNodePosi(T) p);//删除合法位置p处节点，返回别删除数据
 
+//遍历
+    void traverse(void(*) (T&));//函数指针实现
+    template <class VST>
+    void traverse(VST&);//函数对象实现
+
+
 };
 
 #include "list_implementation.h"

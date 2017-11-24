@@ -6,6 +6,8 @@
 #ifndef HLIB_LIST_DEDUPLICATE_H
 #define HLIB_LIST_DEDUPLICATE_H
 
+//无序列表去重，复杂度O(n2)
+//自前向后依次处理各节点p，一点通过find()在p的前驱中找到p的雷同者，调用remove()将雷同者删除
 template<class T>
 int List<T>::deduplicate()
 {
