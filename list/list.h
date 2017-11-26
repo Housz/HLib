@@ -49,8 +49,10 @@ public:
     ListNodePosi(T) first() const { return header->succ; }
     ListNodePosi(T) last() const { return trailer->pred; }
 
+    //列表查找
     ListNodePosi(T) find(T const& e) const;
     ListNodePosi(T) find (T const& e, int n, ListNodePosi(T) p) const;
+    //有序列表查找与无序向量查找类似（列表节点动态存储策略导致逻辑地址与物理地址没有对应关系，故无法像有序向量一样应用减治策咯）
 
 //可写接口
     ListNodePosi(T) insertAsFirst(T const& e);//将e当作首节点插入
@@ -58,10 +60,11 @@ public:
     ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);//将e当作p后继插入
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);//将e当作p前驱插入
 
-    int deduplicate();//无序去重
     T remove (ListNodePosi(T) p);//删除合法位置p处节点，返回别删除数据
+    int deduplicate();//无序去重
+    int uniquify();//有序去重
 
-//遍历
+    //遍历
     void traverse(void(*) (T&));//函数指针实现
     template <class VST>
     void traverse(VST&);//函数对象实现
