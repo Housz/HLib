@@ -1,7 +1,7 @@
 //
 // Created by Housz on 2017/11/26.
 //
-#include "iostream"
+
 #pragma once
 #ifndef HLIB_BINNODE_H
 #define HLIB_BINNODE_H
@@ -39,4 +39,7 @@ struct BinNode
     bool operator >  (BinNode const& bn) { return  data > bn.data; }
     bool operator == (BinNode const& bn) { return data == bn.data; }
 };
+
+#include "binnode_implementation.h"
+
 #endif //HLIB_BINNODE_H
