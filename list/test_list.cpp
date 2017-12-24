@@ -16,9 +16,7 @@ public:
         cout << e << endl;
     }
 };
-
-
-
+/*
 int main()
 {
     List<int> ls;
@@ -31,4 +29,4 @@ int main()
     ls.traverse(v);
     system("pause");
     return 0;
-}
+}*/
